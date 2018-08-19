@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/module2/module2",
+    "pages/module3/module3",
+    "pages/module4/module4",
+    "pages/module1/module1",
+    "pages/module2/temperature/temperature",
+    "pages/module2/UV/UV",
+    "pages/module2/PM25/PM25",
+    "pages/module2/CO2/CO2",
+    "pages/module2/ illumination/illumination"
+  ],
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+
+      "window": {
+        "enablePullDownRefresh": true
+      },
+
+
+    "tabBar": {
+      "color": "#a9b7b7",
+      "selectedColor": "#7ccbf5",
+      "borderStyle": "#eeeeee",
+      "list": [
+        {
+          "selectedIconPath": "images/temperature.png",
+          "iconPath": "images/temperature.png",
+          "pagePath": "pages/module2/temperature/temperature",
+          "text": "温湿度"
+        },
+        {
+          "selectedIconPath": "images/CO2.png",
+          "iconPath": "images/CO2.png",
+          "pagePath": "pages/module2/CO2/CO2",
+          "text": "二氧化碳浓度"
+        },
+        {
+          "selectedIconPath": "images/PM25.png",
+          "iconPath": "images/pm25_1.png",
+          "pagePath": "pages/module2/PM25/PM25",
+          "text": "PM2.5"
+        },
+        {
+         "selectedIconPath": "images/illumination.png",
+         "iconPath": "images/illumination.png",
+         "pagePath": "pages/module2/ illumination/illumination",
+         "text": "光照强度"
+        },
+        {
+          "selectedIconPath": "images/UV.png",
+          "iconPath": "images/UV.png",
+          "pagePath": "pages/module2/UV/UV",
+          "text": "紫外线"
+        }
+      ]
+    },
+
+  "debug": true
+}

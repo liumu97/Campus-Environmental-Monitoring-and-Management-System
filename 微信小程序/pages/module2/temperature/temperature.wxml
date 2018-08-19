@@ -1,0 +1,40 @@
+<image class='back' bindtap='back'  src='../../../images/back.png' style='width: 30px; height: 30px;' ></image>
+
+
+
+
+<view class='block3'>
+  <text>室外温湿度</text>
+  <view class='mes1'>
+    <view class='outtem'>
+      <image src='../../../images/tem.png' style='width: 80px; height: 80px;'></image>
+      <progress percent='{{tem}}' active  stroke-width="12" color='#07d4fa'></progress>
+      <text>{{tem}}℃</text>
+    </view>
+    <view class='outdrop'>
+      <image src='../../../images/hum.png' style='width: 80px; height: 80px;'></image>
+      <progress percent='{{hum}}' active  stroke-width="12" color='#07d4fa'></progress>
+      <text>{{hum}}%</text>
+    </view>
+  </view>
+</view>
+<view class='block4'>
+  <text>室内温湿度</text>
+  <view class='mes2'>
+    <view class='intem'>
+      <image src='../../../images/tem.png' style='width: 80px; height: 80px;'></image>
+      <progress percent="{{envtem}}" active  stroke-width="12" color='#07d4fa'></progress>
+      <text>{{envtem}}℃</text>
+    </view>
+    <view class='indrop'>
+      <image src='../../../images/hum.png' style='width: 80px; height: 80px;'></image>
+      <progress percent='{{envhum}}' active  stroke-width="12" color='#07d4fa'></progress>
+      <text>{{envhum}}%</text>
+    </view>
+  </view>
+</view>
+
+
+
+
+

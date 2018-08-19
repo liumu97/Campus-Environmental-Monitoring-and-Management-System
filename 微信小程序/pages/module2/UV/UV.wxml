@@ -1,0 +1,7 @@
+<image class='back' bindtap='back'  src='../../../images/back.png' style='width: 30px; height: 30px;' ></image>
+
+
+<view class='block1'>
+  <image src='../../../images/filter-uv.png' style='width: 200px; height: 200px;' ></image>
+  <text>{{UV}}W/㎡</text>
+</view>

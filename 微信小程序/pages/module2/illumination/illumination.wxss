@@ -1,0 +1,18 @@
+page{
+  background-image: linear-gradient(to top, #6487b4 0%, #2680b4 50%,#6487b4 100%);
+  color: #bc1717;
+}
+
+
+.block1{
+  margin-left: 87.5px;
+  margin-right: 87.5px;
+  margin-top: 100px;
+  color: white;
+}
+
+text{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

@@ -1,0 +1,16 @@
+.\objects\rc522add.o: ..\devices\src\rc522Add.c
+.\objects\rc522add.o: ..\devices\inc\basePeripheral.h
+.\objects\rc522add.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\objects\rc522add.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\objects\rc522add.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\rc522add.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\objects\rc522add.o: ..\user\stm32f10x_conf.h
+.\objects\rc522add.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\objects\rc522add.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\objects\rc522add.o: ..\hardware\inc\briupGPIO.h
+.\objects\rc522add.o: ..\devices\inc\rc522Add.h
+.\objects\rc522add.o: ..\devices\inc\rc522.h
+.\objects\rc522add.o: ..\devices\inc\mini12864.h
+.\objects\rc522add.o: ..\hardware\inc\briupUSART.h
+.\objects\rc522add.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\rc522add.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

@@ -1,0 +1,10 @@
+.\objects\veml6070.o: ..\devices\src\veml6070.c
+.\objects\veml6070.o: ..\devices\inc\veml6070.h
+.\objects\veml6070.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\objects\veml6070.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\objects\veml6070.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\veml6070.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\objects\veml6070.o: ..\user\stm32f10x_conf.h
+.\objects\veml6070.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\objects\veml6070.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\objects\veml6070.o: ..\hardware\inc\briupI2C.h

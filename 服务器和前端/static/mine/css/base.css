@@ -1,0 +1,219 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: "Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,
+    sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    /*font-size: 1rem;*/
+    background-image: linear-gradient(to top, white 0%, #dfe9f3 100%);
+}
+
+.container-fluid{
+    padding-left: 0px;
+}
+
+.navbar-brand{
+    font-family: "Source Sans Pro",
+    -apple-system,BlinkMacSystemFont,
+    "Segoe UI",Roboto,"Helvetica Neue",Arial,
+    sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.navbar{
+    /*height:80px;*/
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    /*box-shadow: 0 4px 3px 0 rgba(0,0,0,.2);*/
+}
+
+.navbar-header{
+    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+    width: 15.18%;
+    height: 100%;
+}
+
+.navbar-nav a{
+    margin-right: 10px;
+}
+
+.navbar-nav a:hover {
+    color: #127acf !important;
+	transform: scale(1.05);
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.img-circle{
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.btn-red.active.focus, .btn-red.active:focus,.btn-red.focus, .btn-red:active.focus,.btn-red:active:focus, .btn-red:focus {
+    color: #112a48;
+}
+
+.btn.active.focus, .btn.active:focus,.btn.focus, .btn:active.focus,.btn:active:focus, .btn:focus {
+    outline:0;
+}
+
+.navbar a{
+    color: #112a48;
+    margin-top: 10px;
+}
+
+.btn-danger{
+    background-color: #2f6b89;
+}
+
+.btn-my-danger{
+    margin-top: 18px;
+}
+
+.btn-my-danger:hover{
+    background-color: #0f4f85;
+}
+
+.btn-danger:hover{
+    box-shadow: 0 3px 2px 1px #6f6363;
+}
+
+.btn-red{
+    background-color: transparent;
+    border-color: #112a48;
+    color: #09203f;
+    margin-right: 20px;
+}
+
+.btn-red:hover{
+    background-color: #eeeeee;
+    color: #112a48;
+    box-shadow: 0 2px 1px 1px #09203f;
+}
+
+.my-red{
+    color:#e50f29;
+}
+
+.dropdown{
+    position:relative;
+}
+
+.nav-form-my{
+    margin-top: 18px;
+}
+
+.header-intro{
+    position: relative;
+    top:60px;
+    height: 600px;
+}
+
+.intro-section{
+    margin-top: 75px;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.bounce{
+    text-align: center;
+    display: block;
+    bottom: 10px;
+}
+
+.container{
+    margin-top: 60px;
+    float: right;
+    width: 85%;
+}
+.control-container{
+    float: right;
+    width: 85%;
+}
+.switch-container{
+    text-align: center;
+    margin-top: 20px;
+
+}
+#ex1Slider .slider-selection {
+    background: #BABABA;
+}
+.nav1{
+    display: none;
+}
+.nav-header.collapsed > span.glyphicon-chevron-toggle:before {
+    content: "\e114";
+}
+.nav-header > span.glyphicon-chevron-toggle:before {
+    content: "\e113";
+}
+.secondmenu a {
+    font-size: 12px;
+    color: #4A515B;
+    text-align: center;
+}
+.secondmenu li.active {
+    background-color: #eee;
+    border-color: #428bca;
+}
+#data-search{
+    margin-top: 20px;
+    height: 40px;
+}
+#sensor-query{
+    margin-top: 20px;
+    height: 40px;
+}
+.normal-color{
+    display: block;
+    background-color: #2aabd2;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.alarm-color{
+    display: block;
+    background-color: #e50f29;
+}
+.query-condition{
+    margin-top: 20px;
+}
+#alarming{
+    width: 100px;
+    height: 110px;
+    position: fixed;
+    top: 70px;
+    right:0px;
+}
+.width-50 {
+     width: 50px;
+}
+.row1{
+    margin-left: 80px;
+}
+.container1{
+    margin-top: 60px;
+    float: right;
+    width: 75%;
+}
+.contral-icon{
+    height: 70px;
+    width: 70px;
+}
+
+/*新增*/
+/*==============================================================*/
+.result-wrap{padding:10px 20px;border-bottom: 1px solid #e5e5e5;}
+.result-list a{margin-right: 15px;}
+.result-list i{padding-right: 5px;}
+.result-tab{border-collapse:collapse;border: 1px solid #ddd;}
+.result-tab th{font-weight: normal;font-size: 15px;text-align: left;background: url(../images/tab-thbg.png) #f9f9f9 0 bottom repeat-x;}
+.result-tab th,.result-tab td{padding:5px;border-bottom: 1px solid #ddd;border-right: 1px solid #e1e1e1;}
+.result-tab tr{line-height:35px;}
+.result-tab th.tc,.result-tab td.tc{text-align: center;}
+.result-tab tr:nth-child(odd){background: #f9f9f9;}
+.result-tab tr:hover{background: #f1f1f1;}
+.result-tab tr.even-tr{background: #e9fff2;}

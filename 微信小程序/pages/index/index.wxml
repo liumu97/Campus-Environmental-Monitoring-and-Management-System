@@ -1,0 +1,14 @@
+<view class='switch'><image bindtap='switch' src='../../images/control.png' style='width: 375px; height: 150px;'></image></view>
+<view class='weather'><image bindtap='weather' src='../../images/cloud.png' style='width: 375px; height: 150px;'></image></view>
+<view class='about'><image bindtap='about' src='../../images/about.png' style='width: 375px; height: 150px;'></image></view>
+<view class='backlogin'><image bindtap='backlogin' src='../../images/exit.png' style='width: 375px; height: 150px;'></image></view>
+
+
+<!-- <image bindtap='switch' src='../../images/控制.png' style='width: 375px; height: 150px;'></image> -->
+<!-- <image bindtap='warning' src='../../images/安防.png' style='width: 375px; height: 150px;'></image> -->
+<!-- <image bindtap='weather' src='../../images/天气.png' style='width: 375px; height: 150px;'></image> -->
+<!-- <image bindtap='backlogin' src='../../images/退出.png' style='width: 375px; height: 150px;'></image> -->
+
+
+
+

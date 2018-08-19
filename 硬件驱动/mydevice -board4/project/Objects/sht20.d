@@ -1,0 +1,10 @@
+.\objects\sht20.o: ..\devices\src\sht20.c
+.\objects\sht20.o: ..\hardware\inc\briupI2C.h
+.\objects\sht20.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\objects\sht20.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\objects\sht20.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\sht20.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\objects\sht20.o: ..\user\stm32f10x_conf.h
+.\objects\sht20.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\objects\sht20.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\objects\sht20.o: ..\devices\inc\sht20.h

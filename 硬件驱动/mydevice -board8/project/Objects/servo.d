@@ -1,0 +1,9 @@
+.\objects\servo.o: ..\devices\src\servo.c
+.\objects\servo.o: ..\devices\inc\servo.h
+.\objects\servo.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\objects\servo.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\objects\servo.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\servo.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\objects\servo.o: ..\user\stm32f10x_conf.h
+.\objects\servo.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\objects\servo.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h

@@ -1,0 +1,9 @@
+.\objects\fansrelay.o: ..\devices\src\fansRelay.c
+.\objects\fansrelay.o: ..\devices\inc\fansRelay.h
+.\objects\fansrelay.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\objects\fansrelay.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\objects\fansrelay.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\fansrelay.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\objects\fansrelay.o: ..\user\stm32f10x_conf.h
+.\objects\fansrelay.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\objects\fansrelay.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h

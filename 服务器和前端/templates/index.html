@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/font-awesome.css' %}">
+    <link rel="stylesheet" href="{% static 'switch/bootstrap-switch.min.css' %}">
+    <link rel="stylesheet" href="{% static 'mine/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'mine/css/subnav.css' %}">
+    <link rel="stylesheet" href="{% static 'switch/bootstrap-switch.min.css' %}">
+    <link rel="stylesheet" href="{% static 'slider/css/bootstrap-slider.css' %}">
+   <script src="{% static 'bootstrap/js/jquery.min.js' %}"></script>
+   <script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+    <script src="{% static 'switch/bootstrap-switch.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/echarts.min.js' %}"></script>
+     <script src="{% static 'switch/bootstrap-switch.min.js' %}"></script>
+    <script src="{% static 'slider/js/bootstrap-slider.js' %}"></script>
+    <style>
+        #main{
+            background-color: #0f0f0f;
+        }
+        #main1{
+            background-color: #2b542c;
+        }
+.nav-header.collapsed > span.glyphicon-chevron-toggle:before {
+content: "\e114";
+}
+.nav-header > span.glyphicon-chevron-toggle:before {
+content: "\e113";
+}
+        .secondmenu a {
+font-size: 12px;
+color: #4A515B;
+text-align: center;
+}
+.secondmenu li.active {
+background-color: #eee;
+border-color: #428bca;
+}
+    </style>
+</head>
+<body>
+<div id="main" style="width:600px;height:400px;"></div>
+<div id="main1" style="width:600px;height:400px;display: none">
+    <a href="#systemSetting" class="nav-header collapsed" data-toggle="collapse">
+<i class="glyphicon glyphicon-cog"></i>
+系统管理
+<span class="pull-right glyphicon glyphicon-chevron-toggle"></span>
+</a>
+<ul id="systemSetting" class="nav nav-list collapse secondmenu" style="height: 0px;">
+<li class="active"><a href="#"><i class="glyphicon glyphicon-user"></i> 用户管理</a></li>
+<li><a href="#"><i class="glyphicon glyphicon-th-list"></i> 菜单管理</a></li>
+<li><a href="#"><i class="glyphicon glyphicon-asterisk"></i> 角色管理</a></li>
+<li><a href="#"><i class="glyphicon glyphicon-edit"></i> 修改密码</a></li>
+<li><a href="#"><i class="glyphicon glyphicon-eye-open"></i> 日志查看</a></li>
+</ul>
+
+ </ul>
+</div>
+
+<script language='javascript' type='text/javascript'>
+$(function(){
+  var run = document.getElementById("main");
+  var speed = 1;
+  var timer = null;
+  var alpha=30;
+  startrun(100);
+  function startrun(target){
+    clearInterval(timer);
+    timer = setInterval(function(){
+      if(target > alpha){
+        speed = 2;
+      }else{
+        speed = -2;
+      }
+
+      if(alpha == target){
+        clearInterval(timer);
+        $("#main").css('display','none');
+        $("#main1").show();
+      }
+      else{
+        alpha = alpha + speed;
+        run.style.filter = 'alpha(opacity='+alpha+')';
+        run.style.opacity = alpha/100;
+        document.title = alpha;
+      }
+    },30)
+  }
+})
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+<view class='block1'>
+  <view class='image'>
+    <image class='logo' src='../../images/logoSingleWhite.png' style='width: 128px; height: 128px;'></image>
+  </view>
+  <view class='text' decode="true" space='true'>
+    <text>  FORWARD团队是由中南大学物联网专业9名学生共同创立，主要致力于提供专业的校园物联网应用系统解决方案。团队创立于2018年7月。
+  首款测试版产品校园环境监测与管理系统物联网云解决方案于2018年7月24日上线。本微信小程序即为用户客户端之一，可为用户提供便捷的数据查询和物联网设备远程控制服务。
+</text>
+  </view>
+</view>

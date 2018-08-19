@@ -1,0 +1,395 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/font-awesome.css' %}">
+    <script src="{% static 'bootstrap/js/jquery.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'mine/css/base.css' %}">
+</head>
+<script>
+    function posinav() {
+        document.querySelector("#select-nav").scrollIntoView();
+{#        alert("触发");#}
+    }
+</script>
+<style>
+    a{
+        color: #a0a0a0;
+        text-decoration: none;
+    }
+    /*向下滑动的动画效果*/
+    @-webkit-keyframes drop {
+      0%   { top:0px;  opacity: 0;}
+      30%  { top:10px; opacity: 1;}
+      100% { top:25px; opacity: 0;}
+    }
+    @keyframes drop {
+      0%   { top:0px;  opacity: 0;}
+      30%  { top:10px; opacity: 1;}
+      100% { top:25px; opacity: 0;}
+    }
+    /*应用动画，添加按钮效果*/
+    .scroll-down {
+        border: 2px solid #bbb;
+        border-radius: 50%;
+        margin: 0 auto;
+        height: 50px;
+        width: 50px;
+        display: block;
+        text-align: center;
+        z-index: 10;
+        -webkit-transition: all 0.125s ease-in-out 0s;
+        -moz-transition: all 0.125s ease-in-out 0s;
+        -ms-transition: all 0.125s ease-in-out 0s;
+        -o-transition: all 0.125s ease-in-out 0s;
+        transition: all 0.125s ease-in-out 0s;
+    }
+    .scroll-down span {
+        position: relative;
+        color: #bbb;
+        font-size: 24px;
+        -webkit-animation-name: drop;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-delay: 0s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-play-state: running;
+        animation-name: drop;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+    }
+    .rotating-img{
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -o-transition: all 1s;
+    }
+    .rotating-img:hover{
+        transform:rotate(360deg);
+        -ms-transform:rotate(360deg); 	/* IE 9 */
+        -moz-transform:rotate(360deg); 	/* Firefox */
+        -webkit-transform:rotate(360deg); /* Safari 和 Chrome */
+        -o-transform:rotate(360deg); 	/* Opera */
+    }
+    .footer{
+        background-color: #3f4041;
+        width: 100%;
+    }
+    .footer-submenu a {
+        font-size: 14px;
+        color: #ccc;
+    }
+    .wechat{
+        width:20px;
+        height:20px;
+        text-align:center;
+        font-size:16px;
+        color:red;
+        position:absolute;
+        right:0px;
+        top:0px;
+        cursor:pointer;
+    }
+
+</style>
+<body>
+<!--横向导航栏-->
+<nav class="navbar navbar-fixed-top " role="navigation">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" style="color: #e50f29">Forward</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Link</a></li>
+                <form class="navbar-form navbar-left nav-form-my">
+                    <div class="form-group">
+                    <input type="text" class="form-control" placeholder="搜索">
+                    </div>
+                <button type="submit" class="btn btn-default"><span class="fa fa-search"></span></button>
+                </form>
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+                <div class="pull-left">
+                    <a data-toggle="modal" data-target="#login" href="" title="Login" class="btn btn-red">&emsp;注册&emsp;</a>
+                </div>
+                <div class="pull-left">
+                    <a data-toggle="modal" data-target="#login" href="" title="Login" class="btn btn-danger btn-my-danger" data-backdrop="static">&emsp;登录&emsp;</a>
+                </div>
+            </ul>
+        </div>
+    </div><!-- /.container-fluid -->
+</nav>
+<header class="position-relative">
+    <div class="container header-intro">
+        <div class="raw-left col-md-6 intro-section">
+            <h1>The best free chatbot platform to Analyze your bot</h1>
+            <br>
+            <h3>A revolutionary new way to engage with your customers, employees & prospects</h3>
+            <br>
+            <br>
+            <h4 class="dark-text">Get started. All it takes is
+                <span class="red-text">10 mins!</span>
+            </h4>
+            <br>
+            <div class="btn">
+                <button type="button" class="btn btn-red">&emsp;&emsp;查询更多&emsp;</button>
+                <button type="button" class="btn btn-danger btn-my-danger">&emsp;加入我们&emsp;</button>
+            </div>
+        </div>
+        <div class="raw-right col-md-6">
+            <div class="fullscreen-bg">
+                <embed src="{% static 'img/homepage2.svg' %}"  width="600px" height="500px" wmode="transparent">
+            </div>
+        </div>
+    </div>
+    <a class="scroll-down" href = "javascript:;" onclick = "posinav()">
+        <span class="glyphicon glyphicon-chevron-down bounce">
+
+        </span>
+    </a>
+    <div style="z-index:999;display: block; position: fixed; right: 0px; bottom: 100px;">
+        <div class="wechat">
+            <a title="点击关闭"><b></b></a></div>
+                <p>扫描二维码</p><p>进入微信小程序</p>
+            <div class="img-content"><a href="">
+                <img src="{% static 'img/wechat.jpg' %}" style="height: 100px;width: 100px"></a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container" id="select-nav">
+    <div class="section-header">
+        <br>
+        <br>
+        <h2 class="dark-text text-center my-red">功能模块选项</h2>
+        <br>
+        <br>
+    </div>
+    <div class="nav-bottom text-center">
+        <div class="col-md-3">
+            <a href="">
+                <img src="{% static 'img/tianqi.svg' %}" alt="automobile-bot" class="rotating-img">
+            </a>
+            <br>
+            <br>
+            <p class="text-center">天气</p>
+        </div>
+        <div class="col-md-3">
+            <a href="">
+                <img src="{% static 'img/zhaoming.svg' %}" alt="automobile-bot" class="rotating-img">
+            </a>
+            <br>
+            <br>
+            <p class="text-center">照明</p>
+        </div>
+        <div class="col-md-3">
+            <a href="" >
+                <img src="{% static 'img/qiandao.svg' %}" alt="automobile-bot" class="rotating-img">
+            </a>
+            <br>
+            <br>
+            <p class="text-center">签到</p>
+        </div>
+        <div class="col-md-3">
+            <a href="">
+                <img src="{% static 'img/anfang.svg' %}" alt="automobile-bot" class="rotating-img">
+            </a>
+            <br>
+            <br>
+            <p class="text-center">安防</p>
+        </div>
+    </div>
+</div>
+<div class="other-content">
+    <br>
+    <br>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row footer-options">
+            <div class="col-md-3 text-center connect-img email-engati" title="CONTACT_EMAIL">
+                <a href="">
+                    <img src="{% static 'img/email.svg' %}" alt="automobile-bot" class="img-responsive center-block">
+                </a>
+                <div class="white-space-nowrap" style="font-size: 20px;color: #a0a0a0">contact [at] forward [dot] com</div>
+            </div>
+            <div class="col-md-2 col-md-offset-3 col-xs-4 footer-submenu">
+                <br>
+                <p>
+                    <a href="#about-section" title="About Us">About Us</a>
+                </p>
+                <p>
+                    <a href="#" title="Get started videos">Get started videos</a>
+                </p>
+                <p>
+                    <a href="#"
+                       target="_blank" title="Setup docs">Setup docs</a>
+                </p>
+                <p>
+                    <a href="#" title="Pricing">Pricing</a>
+                </p>
+                <p>
+                    <a href="#" title="Community">Community</a>
+                </p>
+            </div>
+            <div class="col-md-2 col-xs-4 footer-submenu footer-divide-line">
+                <br>
+                <p>
+                    <a href="#" title="case studies">Case studies</a>
+                </p>
+                <p>
+                    <a href="#" target="_blank" title="Facebook group">Facebook group</a>
+                </p>
+                <p class="display-none">
+                    <a href="#" title="Email Us">Email Us</a>
+                </p>
+                <p>
+                    <a href="#" title="Events">Events</a>
+                </p>
+                <p>
+                    <a href="#" title="Accolades">Accolades</a>
+                </p>
+            </div>
+            <div class="col-md-2 col-xs-4 contact-text">
+                <br>
+                <p class="connect-engati">Connect with Forward</p>
+                <div>
+                    <a class="connect-img fb" href="#" target="_blank" title="facebook">
+                        <span class="icon-social-facebook transparent-text-dark"></span>
+                    </a>
+                    <a class="connect-img linkedin" href="#" target="_blank" title="linkedin">
+                        <span class="icon-social-linkedin transparent-text-dark"></span>
+                    </a>
+                    <a class="connect-img twitter" href="#" target="_blank" title="twitter">
+                        <span class="icon-social-twitter transparent-text-dark"></span>
+                    </a>
+                    <a class="connect-img insta" href="#" target="_blank" title="instagram">
+                        <span class="icon-social-instagram transparent-text-dark"></span>
+                    </a>
+                    <a class="connect-img utube" href="#" target="_blank" title="youtube">
+                        <span class="icon-social-youtube transparent-text-dark"></span>
+                    </a>
+                </div>
+                <br>
+                <br>
+                <p class="footer-submenu">
+                    <a href="#" title="Contact Us">Contact Us</a>
+                </p>
+                <p class="footer-submenu">
+                    <a target="_blank" href="#">Terms of Use</a>
+                </p>
+                <p class="footer-submenu">
+                    <a target="_blank" href="#">Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+        <h5 class="footer-info row">
+            <div class="col-sm-6 footer-end-text">
+                <a style="font-size: 20px;">© 2018 Forward. All Rights Reserved.</a>
+            </div>
+            <div class="col-sm-5 text-right footer-end-text">
+                <a href="#" target="_blank" style="font-size: 20px;">A Coviam Technologies platform</a>
+            </div>
+        </h5>
+        <br>
+        <br>
+    </div>
+</div>
+<div id="login" class="modal fade" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-title">
+                <h1 class="text-center">登录</h1>
+            </div>
+            <div class="modal-body">
+                <form class="form-group" action="/" id="loginform">
+                    <div class="form-group">
+                        <label for="">用户名</label>
+                        <input class="form-control" type="text" placeholder="" id="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="">密码</label>
+                        <input class="form-control" type="password" placeholder="" id="password">
+                    </div>
+                    <div class="text-right">
+                        <button class="btn btn-primary" type="button" id="submitbtn">登录</button>
+                        <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                    </div>
+                    <div id="remsg"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function(){
+        $('#submitbtn').click(function(){
+            var username = $('#username').val();
+            var password = $('#password').val();
+            if(!username||!password){
+                $("#remsg").empty();
+                $("#remsg").append("用户名和密码不能为空");
+            }else{
+                $.ajax({
+                    type:"POST",
+                    url: '/login/',
+                    data:{
+                        username:username,
+                        password:password
+                    },
+                    dataType:'json',
+                    success:function (data) {
+                        if(data.res == 10){
+                            $("#remsg").empty();
+                            $("#remsg").append("用户名错误");
+                        }else if(data.res == 01) {
+                            $("#remsg").empty();
+                            $("#remsg").append("密码错误");
+                        }else{
+                            location.href='/login/index/';
+                        }
+                    },
+                    error:function () {
+                        $("#remsg").empty();
+                        $("#remsg").append("服务器访问失败");
+                    }
+                });
+            }
+        });
+    });
+
+
+</script>
+
+</body>
+</html>

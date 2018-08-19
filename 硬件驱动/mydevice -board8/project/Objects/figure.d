@@ -1,0 +1,13 @@
+.\objects\figure.o: ..\devices\src\figure.c
+.\objects\figure.o: ..\devices\inc\figure.h
+.\objects\figure.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\objects\figure.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\objects\figure.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\figure.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\objects\figure.o: ..\user\stm32f10x_conf.h
+.\objects\figure.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\objects\figure.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\objects\figure.o: ..\hardware\inc\briupUsart.h
+.\objects\figure.o: ..\hardware\inc\briupDelay.h
+.\objects\figure.o: ..\devices\inc\mini12864.h
+.\objects\figure.o: ..\devices\inc\basePeripheral.h

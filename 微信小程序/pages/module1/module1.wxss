@@ -1,0 +1,81 @@
+page{
+
+  background-color:#79aac7;
+  color: white;
+}
+
+.blingLED{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+.picker-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.LED1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+.LED2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+.LED3{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+
+.sliderView{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+.fan{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+.curtain{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+.SE{
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+.power{
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+button{
+  background-color: white;
+  color: #79aac7;
+  border:1px double #79aac7;
+  width: 200px;
+  margin-bottom: 50px;
+}
+
+.button-hover {
+  background-color:#79aac7;
+  color: white
+}

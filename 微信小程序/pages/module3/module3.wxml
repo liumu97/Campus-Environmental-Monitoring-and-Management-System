@@ -1,0 +1,16 @@
+
+<view class="warning1">安防报警
+    <switch bindchange="switch1Change" checked='{{guard}}'/>
+</view>
+
+
+
+<view class="warning2">消防报警
+    <switch bindchange="switch2Change" checked='{{alarm}}'/>
+</view>
+
+
+<button  class="anfangjingbao" bindtap="anfangClick" hover-class='button-hover'>安防警报解除</button>
+<button  class="xiaofangjingbao" bindtap="xiaofangClick" hover-class='button-hover'>消防警报解除</button>
+
+

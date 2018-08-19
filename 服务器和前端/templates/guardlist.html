@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    table{border-collapse:collapse;border-spacing:0}
+
+    .result-list a{margin-right: 15px;}
+    .result-list i{padding-right: 5px;}
+    .result-tab{border-collapse:collapse;border: 1px solid #ddd;}
+    .result-tab th{font-weight: normal;font-size: 15px;text-align: left;background: url(../images/tab-thbg.png) #f9f9f9 0 bottom repeat-x;}
+    .result-tab th,.result-tab td{padding:5px;border-bottom: 1px solid #ddd;border-right: 1px solid #e1e1e1;}
+    .result-tab tr{line-height:35px;}
+    .result-tab th.tc,.result-tab td.tc{text-align: center;}
+    .result-tab tr:nth-child(odd){background: #f9f9f9;}
+    .result-tab tr:hover{background: #f1f1f1;}
+    .result-tab tr.even-tr{background: #e9fff2;}
+</style>
+<body>
+<div class="result-wrap">
+    <form name="myform" id="myform" method="post">
+        <div class="result-title"></div>
+        <div class="result-content">
+            <table class="result-tab" width="100%">
+                <thead>
+                <tr>
+                    <th>进入时间</th>
+                    <th>姓名</th>
+                    <th>学工号</th>
+                </tr>
+                </thead>
+                {% for item in datas%}
+                    <tr>
+                        <td>{{ item.arrive_time }}</td>
+                        <td>{{ item.username}} </td>
+                        <td>{{ item.login_id }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </form>
+</div>
+</body>
+</html>

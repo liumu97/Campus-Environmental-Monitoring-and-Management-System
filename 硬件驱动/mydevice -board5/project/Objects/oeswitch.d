@@ -1,0 +1,16 @@
+.\objects\oeswitch.o: ..\devices\src\oeSwitch.c
+.\objects\oeswitch.o: ..\devices\inc\oeSwitch.h
+.\objects\oeswitch.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\objects\oeswitch.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\objects\oeswitch.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\oeswitch.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\objects\oeswitch.o: ..\user\stm32f10x_conf.h
+.\objects\oeswitch.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\objects\oeswitch.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\objects\oeswitch.o: ..\hardware\inc\briupUsart.h
+.\objects\oeswitch.o: ..\hardware\inc\briupDelay.h
+.\objects\oeswitch.o: ..\devices\inc\warn.h
+.\objects\oeswitch.o: ..\hardware\inc\briupZigbee.h
+.\objects\oeswitch.o: ..\user\protocol.h
+.\objects\oeswitch.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\oeswitch.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

@@ -1,0 +1,5 @@
+page{
+  background-image: url('https://www.engati.com/images/custom-img/home-page-artwork.svg');
+  background-color: #eeeeee;
+  color: #bc1717;
+}

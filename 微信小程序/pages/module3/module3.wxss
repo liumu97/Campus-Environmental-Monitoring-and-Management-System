@@ -1,0 +1,31 @@
+page{
+
+  background-color: #e28f85;
+  color: white;
+}
+
+.warning1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+.warning2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.stop{
+  border:1px double #bc1717;
+  color: #bc1717;
+  width: 250px;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.button-hover {
+  background-color:#bc1717;
+  color: white
+}

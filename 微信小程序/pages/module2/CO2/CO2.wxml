@@ -1,0 +1,27 @@
+<image class='back' bindtap='back'  src='../../../images/back.png' style='width: 30px; height: 30px;' ></image>
+
+
+<view class='block1'>
+  <image src='../../../images/co2_inside.png' style='width: 200px; height: 200px;' ></image>
+  <text class='text0' >{{CO2}}ppm</text>
+</view>
+
+
+<view class='empty'></view>
+<view class='block2'>
+  <view class='text1'>
+    <text>350～450ppm：同一般室外环境</text>
+  </view>
+  <view class='text2'>
+    <text>350～1000ppm：空气清新，呼吸顺畅</text>
+  </view>
+  <view class='text3'>
+    <text>>10,00ppm：空气浑浊，觉得昏昏欲睡</text>
+  </view>
+  <view class='text4'>
+    <text>>20,00ppm：头痛、注意力无法集中</text>
+  </view>
+  <view class='text5'>
+    <text>>50,00ppm：可能导致严重缺氧、昏迷</text>
+  </view>
+</view>

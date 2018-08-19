@@ -1,0 +1,20 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\protocol.o"
+".\objects\startup_stm32f10x_md.o"
+".\objects\baseperipheral.o"
+".\objects\ws2812b.o"
+".\objects\highlight.o"
+".\objects\is.o"
+".\objects\briupusart.o"
+".\objects\briupdelay.o"
+".\objects\briupgpio.o"
+".\objects\briupzigbee.o"
+".\objects\briuptim.o"
+".\objects\core_cm3.o"
+".\objects\system_stm32f10x.o"
+".\objects\misc.o"
+--strict --scatter ".\Objects\IotSmartHome.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\IotSmartHome.map" -o .\Objects\IotSmartHome.axf

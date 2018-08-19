@@ -1,0 +1,36 @@
+/* pages/module4/module4.wxss */
+Page {
+
+  background-color: #eeeeee;
+  color: white;
+
+}
+
+
+
+.block1{
+  background-color: #e28f85;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-left: 7%;
+  margin-right: 7%;
+  border-radius: 5%;
+}
+
+.image{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logo{
+  margin-top: 30px;
+  align-items: center;
+}
+.text{
+  margin-top: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+}

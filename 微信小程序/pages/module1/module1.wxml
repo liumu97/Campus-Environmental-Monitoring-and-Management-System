@@ -1,0 +1,45 @@
+<view class="blingLED">炫彩小灯
+    <!-- <switch  bindchange="switch0Change" checked='{{xuancaixiaodeng}}'/> -->
+</view>
+<view class='picker-container'>炫彩模式:
+      <picker class='picker-1'  mode="selector" range="{{array}}" value="{{index}}" bindchange="listenerPickerSelected">
+        <text>{{array[index]}}</text>
+      </picker>
+    </view>
+
+
+<view class="LED1">LED1
+    <!-- <switch bindchange="switch1Change" checked='{{zhaomingdeng1}}'/>    -->
+</view>
+<view class='sliderView'>
+  <slider bindchange='slider1change'  value="{{led1}}" name="slider" show-value activeColor='#d6d058'></slider>
+</view>
+<view class="LED2">LED2
+    <!-- <switch bindchange="switch2Change" checked='{{zhaomingdeng2}}'/> -->
+</view>
+<view class='sliderView'>
+  <slider bindchange='slider2change'  value="{{led2}}" name="slider" show-value activeColor='#d6d058'></slider>
+</view>
+
+<view class="LED3">LED3
+    <!-- <switch bindchange="switch3Change" checked='{{zhaomingdeng3}}'/> -->
+</view>
+<view class='sliderView'>
+  <slider bindchange='slider3change'  value="{{led3}}" name="slider" show-value activeColor='#d6d058'></slider>
+</view>
+
+
+
+<view class="fan">风扇开关
+    <switch bindchange="switch4Change" checked='{{kongtiao}}'/>
+</view>
+<view class="curtain">窗帘开关
+    <switch bindchange="switch5Change" checked='{{chuanglian}}'/>
+</view>
+
+<view class="power">切换电源
+    <switch bindchange="switch6Change" checked='{{qiehuandianyuan}}'/>
+</view>
+
+<button  class="parking" bindtap="parkingClick" hover-class='button-hover'>停车场闸机</button>
+<button  class="door" bindtap="doorClick" hover-class='button-hover'>学校大门</button>

@@ -1,0 +1,107 @@
+Page {
+  background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+  background-color: #c02d2d;
+  color: #6991c7;
+  height: 100%;
+  width: 100%;
+
+}
+.page-section{
+  margin-bottom: 20rpx;
+}
+
+.button-container{
+  background: #eeeeee;
+
+}
+
+.ForwardLogo{
+  margin-top: 100px;
+  margin-left: 20px
+}
+
+.userView{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 100px;
+  margin-left: 60px;
+  margin-right: 60px;
+  border-bottom: 1px double #bfbfbf; 
+}
+.passwordView{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+    margin-left: 60px;
+  margin-right: 60px;
+  border-bottom: 1px double #bfbfbf; 
+}
+.userinput{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  width: 450rpx; 
+  text-align: right
+
+}
+.passwordinput{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  width: 450rpx;
+  text-align: right
+}
+
+.input{
+  border:0px double black;
+  float: left;
+  width: 450rpx;
+  height: 40px;
+  
+}
+
+.buttonTap{
+  background-color: #6991c7;
+  color: white;
+  margin-top: 200px
+}
+
+.loginBtn{
+  background-color: #6991c7;
+  color: white;
+  width: 150rpx;
+  margin-left: 150rpx;
+  float:left;
+}
+
+.resetBtn{
+  background-color: white;
+  color: #6991c7;
+  width: 150rpx;
+  float:right;
+  margin-right: 150rpx;
+  border:1px double #6991c7
+  
+}
+
+.button-hover1 {
+  background-color:white;
+  color: #6991c7;
+  border:1px double #6991c7
+}
+.button-hover2 {
+  background-color:#6991c7;
+  color: white
+}
+
+
+
+.passwordView{
+  margin-top: 25px;
+}
+.button-container{
+  margin-top: 25px;
+}

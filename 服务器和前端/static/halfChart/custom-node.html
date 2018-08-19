@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>纯javascript简单实用的仪表盘插件|DEMO5_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<style>
+    button {
+        padding: 8px 14px;
+    }
+
+    .container {
+        width: 850px;
+        margin: 20px auto 0 auto;
+        text-align: center;
+    }
+
+    .gauge {
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        margin: 5px;
+    }
+
+    a:link.button,
+    a:active.button,
+    a:visited.button,
+    a:hover.button {
+        margin: 20px 5px 0 2px;
+        padding: 7px 13px;
+    }
+    </style>
+	<!--[if IE]>
+		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="htmleaf-container">
+		<header class="htmleaf-header">
+			<h1>纯javascript简单实用的仪表盘插件 <span>A handy JavaScript plugin for generating and animating nice & clean dashboard gauges</span></h1>
+			<div class="htmleaf-links">
+				<a class="htmleaf-icon icon-htmleaf-home-outline" href="http://www.htmleaf.com/" title="jQuery之家" target="_blank"><span> jQuery之家</span></a>
+				<a class="htmleaf-icon icon-htmleaf-arrow-forward-outline" href="http://www.htmleaf.com/jQuery/Layout-Interface/201508242467.html" title="返回下载页" target="_blank"><span> 返回下载页</span></a>
+			</div>
+			<div class="htmleaf-demo center">
+			  <a href="index.html">auto-adjust</a>
+        <a href="counter.html">counter</a>
+			  <a href="custom-interval.html">custom-interval</a>
+        <a href="customize-style.html">customize-style</a>
+        <a href="custom-node.html" class="current">custom-node</a>
+        <a href="custom-sectors.html">custom-sectors</a>
+        <a href="custom-value-renderer.html">custom-value-renderer</a>
+        <a href="format-number.html">format-number</a>
+        <a href="html5-data-attribute-config.html">data-attribute</a>
+        <a href="human-friendly-numbers.html">human-friendly-numbers</a>
+        <a href="refresh-maximum.html">refresh-maximum</a>
+        <a href="responsive-gauges.html">responsive-gauges</a>
+			</div>
+		</header>
+		<div id="cont" class="container">
+        <div id="gauge2" class="gauge"></div>
+        <div id="gauge3" class="gauge" data-title="#3" data-value="75" data-counter="true"></div>
+    </div>
+    <div class="container">
+        <button type="button" id="g1_show">Show G1</button>
+        <button type="button" id="g4_show">Show G4</button>
+    </div>
+    <div class="container">
+        <button type="button" id="g1_refresh">Refresh G1</button>
+        <button type="button" id="g2_refresh">Refresh G2</button>
+        <button type="button" id="g3_refresh">Refresh G3</button>
+        <button type="button" id="g4_refresh">Refresh G4</button>
+    </div>
+		<div class="related">
+		    <h3>如果你喜欢这个插件，那么你可能也喜欢:</h3>
+		    <a href="http://www.htmleaf.com/jQuery/Chart/201504211714.html">
+			  <img src="related/1.jpg" width="300" alt="jQuery高质量飞行仪表指示器插件"/>
+			  <h3>jQuery高质量飞行仪表指示器插件</h3>
+			</a>
+			<a href="http://www.htmleaf.com/html5/html5-canvas/20141020238.html">
+			  <img src="related/2.jpg" width="300" alt="html5 canvas+js动态仪表盘插件"/>
+			  <h3>html5 canvas+js动态仪表盘插件</h3>
+			</a>
+		</div>
+	</div>
+	
+	<script src="js/raphael-2.1.4.min.js"></script>
+    <script src="js/justgage.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var gNode1 = document.createElement('div');
+        gNode1.setAttribute("class", "gauge");
+
+        var gNode4 = document.createElement('div');
+        gNode4.setAttribute("class", "gauge");
+        gNode4.setAttribute("data-title", "#4");
+        gNode4.setAttribute("data-value", "100");
+        gNode4.setAttribute("data-counter", "true");
+
+        var gauge1 = new JustGage({
+            parentNode: gNode1,
+            width: 150,
+            height: 150,
+            title: "#1",
+            value: 25,
+            min: 0,
+            max: 100,
+            decimals: 0,
+            counter: true
+        });
+
+        var gauge2 = new JustGage({
+            id: "gauge2",
+            title: "#2",
+            value: 50,
+            min: 0,
+            max: 100,
+            humanFriendly: false,
+            decimals: 0,
+            counter: true
+        });
+
+        var gauge3 = new JustGage({
+            id: "gauge3"
+        });
+
+        var gauge4 = new JustGage({
+            parentNode: gNode4,
+            width: 150,
+            height: 150
+        });
+
+        document.getElementById('g1_refresh').addEventListener('click', function() {
+            gauge1.refresh(getRandomInt(0, 100));
+        });
+
+        document.getElementById('g2_refresh').addEventListener('click', function() {
+            gauge2.refresh(getRandomInt(0, 100));
+        });
+
+        document.getElementById('g3_refresh').addEventListener('click', function() {
+            gauge3.refresh(getRandomInt(0, 100));
+        });
+
+        document.getElementById('g4_refresh').addEventListener('click', function() {
+            gauge4.refresh(getRandomInt(0, 100));
+        });
+
+        document.getElementById('g1_show').addEventListener('click', function() {
+            var container = document.getElementById("cont");
+            container.insertBefore(gNode1, container.childNodes[0]);
+            container = null;
+        });
+
+        document.getElementById('g4_show').addEventListener('click', function() {
+            var container = document.getElementById("cont");
+            container.appendChild(gNode4, container.childNodes[0]);
+            container = null;
+        });
+
+    });
+    </script>
+</body>
+</html>

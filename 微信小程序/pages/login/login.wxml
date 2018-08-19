@@ -1,0 +1,36 @@
+<!--pages/login/login.wxml-->
+<!--Logo-->
+<image class='ForwardLogo' src='../../images/home2.png' style='width: 90%; height: 11%;'></image>
+
+
+<view class='userView' style="flex-direction:row;">
+  <image src='../../images/user.png' style='width: 30px; height: 30px;'></image>
+  <view class="userinput">
+    <input class="input" value='{{infoMess}}' name="userName" placeholder="请输入用户名" bindinput="userNameInput" />
+  </view>
+
+</view>
+
+<view class='passwordView' style="flex-direction:row;">
+  <image src='../../images/password.png' style='width: 30px; height: 30px;'></image>
+  <view class="passwordinput">
+    <input class="input" value='{{passWd}}' name="passwords" password placeholder="请输入密码" bindinput="passWdInput" />
+  </view>
+</view>
+
+
+
+<view class="viewName" style="background-color:#fbf9fe">
+  <view class='button-container'>
+    <button class="loginBtn" bindtap="loginBtnClick" hover-class='button-hover1'>登录</button>
+    <button class="resetBtn" bindtap="resetBtnClick" hover-class='button-hover2'>清空</button>
+  </view>
+</view>
+
+
+<!-- <button class="buttonTap" bindtap="buttonTap">假登录</button> -->
+
+
+<view>{{infoMess}}</view>
+<view>{{userName}}</view>
+<view>{{passWd}}</view>

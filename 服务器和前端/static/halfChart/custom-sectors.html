@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>纯javascript简单实用的仪表盘插件|DEMO6_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<style>
+      .container {
+      width: 450px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .gauge {
+      width: 450px;
+      height: 450px;
+    }
+
+    a:link.button,
+    a:active.button,
+    a:visited.button,
+    a:hover.button {
+      margin: 30px 5px 0 2px;
+      padding: 7px 13px;
+    }
+    </style>
+	<!--[if IE]>
+		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="htmleaf-container">
+		<header class="htmleaf-header">
+			<h1>纯javascript简单实用的仪表盘插件 <span>A handy JavaScript plugin for generating and animating nice & clean dashboard gauges</span></h1>
+			<div class="htmleaf-links">
+				<a class="htmleaf-icon icon-htmleaf-home-outline" href="http://www.htmleaf.com/" title="jQuery之家" target="_blank"><span> jQuery之家</span></a>
+				<a class="htmleaf-icon icon-htmleaf-arrow-forward-outline" href="http://www.htmleaf.com/jQuery/Layout-Interface/201508242467.html" title="返回下载页" target="_blank"><span> 返回下载页</span></a>
+			</div>
+			<div class="htmleaf-demo center">
+			  <a href="index.html">auto-adjust</a>
+        <a href="counter.html">counter</a>
+			  <a href="custom-interval.html">custom-interval</a>
+        <a href="customize-style.html">customize-style</a>
+        <a href="custom-node.html">custom-node</a>
+        <a href="custom-sectors.html" class="current">custom-sectors</a>
+        <a href="custom-value-renderer.html">custom-value-renderer</a>
+        <a href="format-number.html">format-number</a>
+        <a href="html5-data-attribute-config.html">data-attribute</a>
+        <a href="human-friendly-numbers.html">human-friendly-numbers</a>
+        <a href="refresh-maximum.html">refresh-maximum</a>
+        <a href="responsive-gauges.html">responsive-gauges</a>
+			</div>
+		</header>
+		<div class="container">
+      <div id="gg1" class="gauge"></div>
+      <p>0-25 is red, 26-50 is green, 51-100 is blue</p>
+      <a href="#" id="gg1_refresh" class="button grey btn">Random Refresh</a>
+    </div>
+		<div class="related">
+		    <h3>如果你喜欢这个插件，那么你可能也喜欢:</h3>
+		    <a href="http://www.htmleaf.com/jQuery/Chart/201504211714.html">
+			  <img src="related/1.jpg" width="300" alt="jQuery高质量飞行仪表指示器插件"/>
+			  <h3>jQuery高质量飞行仪表指示器插件</h3>
+			</a>
+			<a href="http://www.htmleaf.com/html5/html5-canvas/20141020238.html">
+			  <img src="related/2.jpg" width="300" alt="html5 canvas+js动态仪表盘插件"/>
+			  <h3>html5 canvas+js动态仪表盘插件</h3>
+			</a>
+		</div>
+	</div>
+	
+	<script src="js/raphael-2.1.4.min.js"></script>
+    <script src="js/justgage.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var gg1 = new JustGage({
+          id: "gg1",
+          value : 72.15,
+          min: 0,
+          max: 100,
+          decimals: 2,
+          gaugeWidthScale: 0.6,
+          customSectors: [{
+            color : "#ff0000",
+            lo : 0,
+            hi : 25
+          },{
+            color : "#00ff00",
+            lo : 25,
+            hi : 50
+          }, {
+            color : "#0000ff",
+            lo : 50,
+            hi : 100
+          }],
+          counter: true
+        });
+
+        document.getElementById('gg1_refresh').addEventListener('click', function() {
+          gg1.refresh(getRandomInt(0, 100));
+        });
+      });
+    </script>
+</body>
+</html>

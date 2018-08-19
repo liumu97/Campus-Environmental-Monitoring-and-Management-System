@@ -1,0 +1,9 @@
+.\objects\highlight.o: ..\devices\src\highLight.c
+.\objects\highlight.o: ..\devices\inc\highLight.h
+.\objects\highlight.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\objects\highlight.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\objects\highlight.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\highlight.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\objects\highlight.o: ..\user\stm32f10x_conf.h
+.\objects\highlight.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\objects\highlight.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h

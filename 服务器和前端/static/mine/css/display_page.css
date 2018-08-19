@@ -1,0 +1,380 @@
+.main-nav{
+    margin-top:80px;
+    margin-left: 0;
+    width: 100px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 18px;
+    color: #a0a0a0;
+}
+
+.display-figure{
+    text-align: center;
+}
+
+/*室外显示的box*/
+.value-tmp, .value-humidity, .value-pm25, .value-uv{
+    width: 200px;
+    height: 100px;
+    color: #e4efe9;
+    background-color: #f4f4f4;
+    font-family: "Source Sans Pro",
+    -apple-system,BlinkMacSystemFont,
+    "Segoe UI",Roboto,"Helvetica Neue",Arial,
+    sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    line-height: 1.2;
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+.value-tmp{
+    box-shadow: 3px 3px 3px 3px #e1e1e1;
+    background-image: linear-gradient(-225deg, #CBBACC 0%, #2580B3 100%);
+
+}
+.value-humidity{
+    box-shadow: 3px 3px 3px 3px #e1e1e1;
+    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+}
+.value-pm25{
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    box-shadow: 3px 3px 3px 3px #e1e1e1;
+}
+.value-uv{
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    box-shadow: 3px 3px 3px 3px #e1e1e1;
+}
+
+.outdoor-box{
+    width: 100%;
+    padding-left: 60px;
+    color:#e4efe9;
+}
+
+.outdoor-display{
+
+    width: 25%;
+    min-height: 1px;
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+}
+
+.small-box h3 {
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    white-space: nowrap;
+    padding: 0;
+}
+
+
+.value-display-box{
+    text-align: center;
+}
+
+.value-display{
+    text-align: center;
+    border: none;
+    font-size: 15px;
+    color: #a0a0a0;
+    background:none;
+    width:auto;
+    margin-bottom: 10px;
+}
+
+.third-nav{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.current-page-nav{
+    background:none;
+}
+
+.style-feature:hover{
+    transform: scale(1.01);
+    box-shadow: 0 4px 8px 0 #93a5cf, 0 6px 20px 0 #e4efe9;
+}
+
+
+ .style-rotate {
+            -webkit-transition: -webkit-transform 0.2s ease-out;
+            -moz-transition: -moz-transform 0.2s ease-out;
+            -o-transition: -o-transform 0.2s ease-out;
+            -ms-transition: -ms-transform 0.2s ease-out;
+        }
+
+ .style-rotate:hover {
+    -webkit-transform: rotateZ(70deg);
+    -moz-transform: rotateZ(70deg);
+    -o-transform: rotateZ(70deg);
+    -ms-transform: rotateZ(70deg);
+    transform: rotateZ(70deg);
+
+}
+
+
+.date-display{
+
+}
+
+/*日期居中显示
+ */
+.date-text{
+    position: absolute;
+    left: 100px;
+    bottom: 48px;
+}
+
+.img-display{
+    margin-top: 25px;
+    width: 120px;
+}
+
+.uv-rays-of-sun-display{
+    position: absolute;
+    left: 70px;
+    bottom: 48px;
+}
+
+.uv-display{
+    width: 43px;
+}
+
+/*
+.figure-pic {
+    border-width: 1px;
+    border-style: solid;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-color: lightgrey;
+}
+*/
+
+.figure-pic{
+    margin-top: 50px;
+}
+
+.figure-pic .figure-pic-header {
+    width: 100%;
+    padding: 0 10px;
+    height: 35px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: lightgray;
+    /*background-color: #eeeeee;*/
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+}
+
+.figure-pic .figure-pic-header h3{
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "latobold";
+    font-size: 1.1em;
+    margin:0;
+    line-height: 35px;
+    float:left;
+    margin-left: 5px;
+}
+
+.figure-pic .figure-pic-header em{
+    float: left;
+    font-size: 0.9em;
+    color:#e4efe9;
+    line-height: 35px;
+    margin-left:4px;
+}
+
+
+.figure-pic .figure-pic-header .figure-pic-header-toolbar {
+    float: right;
+    width: auto;
+    height: 35px;
+    border-left: 1px solid #ddd;
+    line-height: 35px;
+}
+
+.btn-group, .btn-group-vertical {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.figure-pic .figure-pic-header .btn-group > a {
+    color: #555;
+}
+
+.figure-pic .figure-pic-header .figure-pic-header-toolbar > a {
+    margin-left: 5px;
+}
+
+.figure-pic .figure-pic-content{
+    margin-left: 5px;
+    margin-top: 10px;
+    height: 400px;
+}
+
+.figure-pic .figure-pic-tmp, .figure-pic-left, .figure-pic-right{
+    margin: 0;
+    padding: 0;
+    border-width: 1px;
+    border-style: solid;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-color: lightgrey;
+    height: 400px;
+}
+
+.figure-pic .figure-pic-tmp{
+    margin-left: 4.333%;
+}
+
+.figure-pic .figure-pic-left{
+    float: left;
+    margin-left: 4.333%;
+}
+
+.figure-pic .figure-pic-right{
+    float: right;
+    margin-right: 4.333%;
+}
+
+
+.dash-board{
+    margin-top: 80px;
+}
+
+/*日历
+
+ */
+
+.bg-success-gradient {
+    background: #09203f;
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#09203f),color-stop(1,#537895));
+    background: -ms-linear-gradient(bottom,#09203f,#537895);
+    /*background: -moz-linear-gradient(center bottom,#28a745 0,#34ce57 100%);*/
+    background: -o-linear-gradient(#537895,#09203f);
+    color: #fff;
+}
+
+.datepicker-inline {
+    width: 100%;
+}
+
+.datepicker {
+    padding: 4px;
+    border-radius: 4px;
+    direction: ltr;
+}
+
+.datepicker thead tr:first-child th, .datepicker tfoot tr th {
+    cursor: pointer;
+}
+
+.datepicker th.datepicker-switch {
+    width: 145px;
+}
+
+.datepicker table tr td, .datepicker table tr th {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+}
+
+.table tr{
+    height: 40px;
+    line-height: 40px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px;
+    /*line-height: 1.42857143;*/
+    vertical-align: top;
+    /*border-top: 1px solid #ddd;*/
+}
+
+th {
+    font-weight: bold;
+}
+
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.table>tbody>tr.active>td, .table>tbody>tr.active>th, .table>tbody>tr>td.active, .table>tbody>tr>th.active, .table>tfoot>tr.active>td, .table>tfoot>tr.active>th, .table>tfoot>tr>td.active, .table>tfoot>tr>th.active, .table>thead>tr.active>td, .table>thead>tr.active>th, .table>thead>tr>td.active, .table>thead>tr>th.active {
+    background-color: #09203f;
+}
+
+
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+
+.card-title {
+    margin-bottom: .75rem;
+    margin-left: 10px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.fa-calendar:before {
+    content: "\f073";
+}
+
+.card-header>.card-tools {
+    position: absolute;
+    right: 1rem;
+    top: .5rem;
+}
+
+/*历史数据展示表
+ */
+
+.table-header-1{
+    width: 22%;
+}
+
+.table-header{
+    width: 16%;
+}
+
+.history-data-display{
+    background-color: #761c19;
+    border: none;
+    font-size: 15px;
+    color: #000000;
+    background:none;
+    width:auto;
+}
+

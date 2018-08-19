@@ -1,0 +1,26 @@
+<image class='back' bindtap='back'  src='../../../images/back.png' style='width: 30px; height: 30px;' ></image>
+
+
+<view class='block1'>
+  <image src='../../../images/PM25.png' style='width: 200px; height: 200px;'></image>
+  <text class='text0'>{{pm25}}μg/m³</text>
+</view>
+
+<view class='empty'></view>
+<view class='block2'>
+  <view class='text1'>
+    <text>空气质量  优：0~50μg/m³</text>
+  </view>
+  <view class='text2'>
+    <text>空气质量  良：50~100μg/m³</text>
+  </view>
+  <view class='text3'>
+    <text>空气质量  中度污染：150~200μg/m³</text>
+  </view>
+  <view class='text4'>
+    <text>空气质量  重度污染：200~300μg/m³</text>
+  </view>
+  <view class='text5'>
+    <text>空气质量  严重污染：大于300μg/m³</text>
+  </view>
+</view>

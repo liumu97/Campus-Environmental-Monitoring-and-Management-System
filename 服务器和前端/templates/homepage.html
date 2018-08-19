@@ -1,0 +1,274 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>F o r w a r d</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="{% static 'assets/js/ie/html5shiv.js' %}"></script><![endif]-->
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+        <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'bootstrap/css/font-awesome.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+        <script src="{% static 'bootstrap/js/jquery.min.js' %}"></script>
+        <script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.scrollex.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
+        <script src="{% static 'assets/js/skel.min.js' %}"></script>
+        <script src="{% static 'assets/js/util.js' %}"></script>
+        <!--[if lte IE 8]><script src="{% static 'assets/js/ie/respond.min.js' %}"></script><![endif]-->
+        <script src="{% static 'assets/js/main.js' %}"></script>
+        <style>
+            .modal-backdrop {
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 1040;
+                background-color: transparent;
+            }
+            input[type="text"], input[type="password"], textarea, textarea.form-control {
+                height: 50px;
+                margin: 0;
+                padding: 0 20px;
+                vertical-align: middle;
+                background: #f8f8f8;
+                border: 3px solid #ddd;
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 50px;
+                color: #888;
+                -moz-border-radius: 4px;
+                -webkit-border-radius: 4px;
+                border-radius: 4px;
+                -moz-box-shadow: none;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                -o-transition: all .3s;
+                -moz-transition: all .3s;
+                -webkit-transition: all .3s;
+                -ms-transition: all .3s;
+                transition: all .3s;
+            }
+            .form-control:focus{
+                border-color: transparent;
+            }
+            .about-row{
+                margin-right: 100px;
+                margin-left: 100px;
+            }
+            .about-img{
+                height:120px;
+                width: 120px;
+            }
+        </style>
+	</head>
+	<body class="landing">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">
+                            <img src="{% static 'img/contactus/home2.png' %}" style="max-height: 1.7em; float: left; margin-top: 0.7em">
+                        </a></h1>
+						<nav id="nav">
+							<ul>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle menuToggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MENU </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" >Action</a></li>
+                                        <li><a href="#">Another </a></li>
+                                        <li><a href="#">Something</a></li>
+                                        <li><a href="#">Separated </a></li>
+                                        <li><a href="#">One more </a></li>
+                                    </ul>
+                                </li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2><img src="{% static 'img/contactus/home2.png' %}" style="max-height: 1.7em;"></h2>
+                            <br>
+                            <br>
+                            <p>校园物联网解决方案专业提供商</p>
+                            <br>
+							<ul class="actions">
+
+								<li> <a data-toggle="modal" data-target="#login" href="" title="Login"
+                                   class="button special btn btn-danger btn-my-danger" data-backdrop="static">&emsp;登录&emsp;</a></li>
+							</ul>
+						</div>
+						<a href="#one" class="more scrolly">了解更多</a>
+					</section>
+                <!--登录窗口-->
+                <div id="login" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content" style="">
+                            <div class="modal-body">
+                                <button class="close" data-dismiss="modal" style="height: auto;text-align:center;opacity:0.5">
+                                    <span style="border: none;">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-title">
+                                <h1 class="text-center" style="font-weight: 300;color: #3f4041;">登录</h1>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-group" action="/" id="loginform">
+                                    <div class="form-group">
+                                        <label for="" style="color: #00001e;font-weight: 300;">用户名</label>
+                                        <input class="form-control" type="text"  id="username" placeholder="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" style="color: #3f4041;font-weight:300; ">密码</label>
+                                        <input class="form-control" type="password" id="password" placeholder="">
+                                    </div>
+                                    <div class="text-right">
+                                        <button class="btn btn-info" type="button" id="submitbtn" style="border:none;width:100px;">登录</button>
+                                        <button class="btn btn-danger" data-dismiss="modal" style="border:none;width: 100px;">取消</button>
+                                    </div>
+                                    <div id="remsg" style="color: #0f0f0f;"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $(function(){
+                        $('#submitbtn').click(function(){
+                            var username = $('#username').val();
+                            var password = $('#password').val();
+                            if(!username||!password){
+                                $("#remsg").empty();
+                                $("#remsg").append("用户名和密码不能为空");
+                            }else{
+                                $.ajax({
+                                    type:"POST",
+                                    url: '/login/',
+                                    data:{
+                                        username:username,
+                                        password:password
+                                    },
+                                    dataType:'json',
+                                    success:function (data) {
+                                        if(data.res == 10){
+                                            $("#remsg").empty();
+                                            $("#remsg").append("用户名错误");
+                                        }else if(data.res == 01) {
+                                            $("#remsg").empty();
+                                            $("#remsg").append("密码错误");
+                                        }else{
+                                            location.href='/login/index/';
+                                        }
+                                    },
+                                    error:function () {
+                                        $("#remsg").empty();
+                                        $("#remsg").append("服务器访问失败");
+                                    }
+                                });
+                            }
+                        });
+                    });
+                    //判断是否敲击了Enter键
+                    $(document).keyup(function(event){
+                        if(event.keyCode ==13){
+                          $("#submitbtn").trigger("click");
+                        }
+                    });
+                </script>
+
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>- 我 们 的 特 色 -<br /><br>
+								O u r&nbsp;&nbsp;&nbsp;&nbsp;A m a z i n g&nbsp;&nbsp;&nbsp;&nbsp;f e a t u r e s.</h2>
+								<p style="font-size: 20px;">高效&nbsp;&nbsp;&nbsp;&nbsp;专业&nbsp;&nbsp;&nbsp;&nbsp;便捷&nbsp;&nbsp;&nbsp;&nbsp;普适</p>
+							</header>
+							<ul class="icons major">
+								<li><span class="icon fa-bar-chart-o major style1"><span class="label">Lorem</span></span></li>
+								<li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
+								<li><span class="icon fa-laptop major style3"><span class="label">Dolor</span></span></li>
+							</ul>
+						</div>
+                        <a href="#two" class="more scrolly">功能介绍</a>
+					</section>
+
+
+				<!-- two -->
+					<section id="two" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>- 我 们 能 做 什 么 -
+								<br><br>W h a t&nbsp;&nbsp;&nbsp;&nbsp;C a n&nbsp;&nbsp;&nbsp;&nbsp;W e&nbsp;&nbsp;&nbsp;&nbsp;
+                                    D o&nbsp;&nbsp;&nbsp;&nbsp;F o r&nbsp;&nbsp;&nbsp;&nbsp;Y o u .</h2>
+							</header>
+							<ul class="features">
+								<li class="icon fa-star">
+									<h3>状态监测</h3>
+									<p>提供对室内、室外环境的监测，室内包括对CO2浓度、温湿度、紫外线强度的监测，室外包括温湿度、光照强度、PM2.5的监测。</p>
+								</li>
+								<li class="icon fa-laptop">
+									<h3>设备控制</h3>
+									<p>在Web和微信端提供远程控制设备的开关和状态切换的功能，包括风扇、窗帘、教室内照明灯和室外炫彩灯的开关控制，还包括电源的切换、停车场大门和学校大门的控制。</p>
+								</li>
+								<li class="icon fa-shield">
+									<h3>安防系统</h3>
+									<p>通过指纹识别和RFID射频识别对校内人员进出进行严格的管理和控制，并利用对射传感器和反射传感器对非法入侵进行警报，及时传输到Web端和微信端通知用户，以便及时进行处理。</p>
+								</li>
+								<li class="icon fa-fire">
+									<h3>消防系统</h3>
+									<p>利用火光传感器、甲烷传感器、烟雾传感器、红外线传感器对火灾情况进行严格的监控，一旦发生火灾，及时在校内拉响报警灯和报警铃，并同步到服务器及时通知Web前端用户和微信小程序用户，进行应急处理。</p>
+								</li>
+								<li class="icon fa-search">
+									<h3>数据查询</h3>
+									<p>提供近期数据的图标展示和所有历史数据的查询功能，对数据进行分析和处理，以便更好的掌握校园内环境、安防、消防各个方面的情况。</p>
+								</li>
+								<li class="icon fa-area-chart">
+									<h3>智能控制</h3>
+									<p>在校园内部署传感器，当环境变化和电力出现问题，能够自动进行相应处理，达到智能控制的作用。比如紫外线强度达到一定阈值，自动拉上窗帘，当室内温度达到一定阈值，自动打开风扇等。</p>
+								</li>
+							</ul>
+						</div>
+
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="http://www.csu.edu.cn/" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+							<li><a href="http://www.csu.edu.cn/" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+							<li><a href="http://www.csu.edu.cn/" class="icon fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+							<li><a href="https://weibo.com/csunews?sudaref=www.baidu.com&display=0&retcode=6102" class="icon fa-weibo" target="_blank"><span class="label">Weibo</span></a></li>
+							<li><a href="http://www.csu.edu.cn/" class="icon fa-envelope-o" target="_blank"><span class="label">Email</span></a></li>
+                            <li><a href="http://www.csu.edu.cn/" class="icon fa-weixin" target="_blank"><span class="label">WeiXin</span></a></li>
+						</ul>
+						<ul class="copyright">
+                            <li style="border: none">Supported By <a href="http://www.csu.edu.cn/">@CSU</a></li>
+                            <br/>
+                            <br/>
+                            <li> - &copy; Copyright</li><li> Forward Since 2018. All rights reserved<a href="#banner" target="_blank" title="Forward"> @FORWARD</a> - </li>
+
+                        </ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'assets/js/skel.min.js' %}"></script>
+			<script src="{% static 'assets/js/util.js' %}"></script>
+			<!--[if lte IE 8]><script src="{% static 'assets/js/ie/respond.min.js' %}"></script><![endif]-->
+			<script src="{% static 'assets/js/main.js' %}"></script>
+
+	</body>
+</html>

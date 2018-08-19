@@ -1,0 +1,93 @@
+Page{
+  background-image: linear-gradient(to top, #6487b4 0%, #2680b4 50%,#6487b4 100%);
+  color: #215272;
+}
+
+.block1{
+  margin-left: 87.5px;
+  margin-right: 87.5px;
+  color: white;
+}
+.block2{
+  background-color: #eeeeee
+}
+.empty{
+  background-color: #eeeeee;
+  height: 10px;
+}
+
+.text0{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.text1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: #215272 solid 2px;
+  background-color: white;
+  height: 40px;
+  text-align: center;
+  border-radius: 5%;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 17px;
+}
+.text2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: #215272 solid 2px;
+  background-color: white;
+  height: 40px;
+  text-align: center;
+  border-radius: 5%;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 17px;
+}
+.text3{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: #215272 solid 2px;
+  background-color: white;
+  height: 40px;
+  text-align: center;
+  border-radius: 5%;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 17px;
+}
+.text4{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: #215272 solid 2px;
+  background-color: white;
+  height: 40px;
+  text-align: center;
+  border-radius: 5%;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 17px;
+}
+.text5{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: #215272 solid 2px;
+  background-color: white;
+  height: 40px;
+  text-align: center;
+  border-radius: 5%;
+  margin-left: 15px;
+  margin-right: 15px;
+}

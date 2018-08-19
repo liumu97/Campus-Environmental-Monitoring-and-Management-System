@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>纯javascript简单实用的仪表盘插件|DEMO1_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<style>
+      body {
+        text-align: center;
+      }
+
+      #g1 {
+        width:400px; height:320px;
+        display: inline-block;
+        margin: 1em;
+      }
+
+      #g2, #g3, #g4 {
+        width:100px; height:80px;
+        display: inline-block;
+        margin: 1em;
+      }
+
+      p {
+        display: block;
+        width: 450px;
+        margin: 2em auto;
+        text-align: left;
+      }
+    </style>
+</head>
+<body>
+	<div class="htmleaf-container">
+		<header class="htmleaf-header">
+			<h1>纯javascript简单实用的仪表盘插件 <span>A handy JavaScript plugin for generating and animating nice & clean dashboard gauges</span></h1>
+			<div class="htmleaf-links">
+				<a class="htmleaf-icon icon-htmleaf-home-outline" href="http://www.htmleaf.com/" title="jQuery之家" target="_blank"><span> jQuery之家</span></a>
+				<a class="htmleaf-icon icon-htmleaf-arrow-forward-outline" href="http://www.htmleaf.com/jQuery/Layout-Interface/201508242467.html" title="返回下载页" target="_blank"><span> 返回下载页</span></a>
+			</div>
+			<div class="htmleaf-demo center">
+			  <a href="index.html" class="current">auto-adjust</a>
+        <a href="counter.html">counter</a>
+			  <a href="custom-interval.html">custom-interval</a>
+        <a href="customize-style.html">customize-style</a>
+        <a href="custom-node.html">custom-node</a>
+        <a href="custom-sectors.html">custom-sectors</a>
+        <a href="custom-value-renderer.html">custom-value-renderer</a>
+        <a href="format-number.html">format-number</a>
+        <a href="html5-data-attribute-config.html">data-attribute</a>
+        <a href="human-friendly-numbers.html">human-friendly-numbers</a>
+        <a href="refresh-maximum.html">refresh-maximum</a>
+        <a href="responsive-gauges.html">responsive-gauges</a>
+			</div>
+		</header>
+		<div id="g1"></div>
+	    <div id="g2"></div>
+	    <div id="g3"></div>
+	    <div id="g4"></div>
+	    <p>
+	      JustGage auto-adjusts to the size of containing element. And to the screen zoom level. And screen density. Nice. This means you’ll get clean, sharp and nice looking gauge at all times. Try zooming the page to see the results.
+	    </p>
+		<div class="related">
+		    <h3>如果你喜欢这个插件，那么你可能也喜欢:</h3>
+		    <a href="http://www.htmleaf.com/jQuery/Chart/201504211714.html">
+			  <img src="related/1.jpg" width="300" alt="jQuery高质量飞行仪表指示器插件"/>
+			  <h3>jQuery高质量飞行仪表指示器插件</h3>
+			</a>
+			<a href="http://www.htmleaf.com/html5/html5-canvas/20141020238.html">
+			  <img src="related/2.jpg" width="300" alt="html5 canvas+js动态仪表盘插件"/>
+			  <h3>html5 canvas+js动态仪表盘插件</h3>
+			</a>
+		</div>
+	</div>
+	
+	<script src="js/raphael-2.1.4.min.js"></script>
+    <script src="js/justgage.js"></script>
+    <script>
+      var g1, g2, g3, g4;
+
+      window.onload = function(){
+        var g1 = new JustGage({
+          id: "g1",
+          value: getRandomInt(0, 100),
+          min: 0,
+          max: 100,
+          title: "Big Fella",
+          label: "pounds"
+        });
+
+        var g2 = new JustGage({
+          id: "g2",
+          value: getRandomInt(0, 100),
+          min: 0,
+          max: 100,
+          title: "Small Buddy",
+          label: "oz"
+        });
+
+        var g3 = new JustGage({
+          id: "g3",
+          value: getRandomInt(0, 100),
+          min: 0,
+          max: 100,
+          title: "Tiny Lad",
+          label: "oz"
+        });
+
+        var g4 = new JustGage({
+          id: "g4",
+          value: getRandomInt(0, 100),
+          min: 0,
+          max: 100,
+          title: "Little Pal",
+          label: "oz"
+        });
+
+        setInterval(function() {
+          g1.refresh(getRandomInt(50, 100));
+          g2.refresh(getRandomInt(50, 100));
+          g3.refresh(getRandomInt(0, 50));
+          g4.refresh(getRandomInt(0, 50));
+        }, 2500);
+      };
+    </script>
+</body>
+</html>

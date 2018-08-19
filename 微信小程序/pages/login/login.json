@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {},
+  "backgroundTextStyle":"light",
+  "navigationBarBackgroundColor": "#305a94",
+  "navigationBarTitleText": "Forward未来科技",
+  "navigationBarTextStyle": "white"
+
+
+}
