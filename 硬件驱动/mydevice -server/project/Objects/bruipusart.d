@@ -1,9 +1,0 @@
-.\objects\bruipusart.o: ..\hardware\src\bruipUSART.c
-.\objects\bruipusart.o: ..\hardware\inc\bruipUSART.h
-.\objects\bruipusart.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
-.\objects\bruipusart.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
-.\objects\bruipusart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\bruipusart.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
-.\objects\bruipusart.o: ..\user\stm32f10x_conf.h
-.\objects\bruipusart.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
-.\objects\bruipusart.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h

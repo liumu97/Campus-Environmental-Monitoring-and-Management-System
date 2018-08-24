@@ -1,9 +1,0 @@
-.\objects\briupdelay.o: ..\hardware\src\briupDelay.c
-.\objects\briupdelay.o: ..\hardware\inc\briupDelay.h
-.\objects\briupdelay.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
-.\objects\briupdelay.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
-.\objects\briupdelay.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\briupdelay.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
-.\objects\briupdelay.o: ..\user\stm32f10x_conf.h
-.\objects\briupdelay.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
-.\objects\briupdelay.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
